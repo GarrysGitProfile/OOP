@@ -1,9 +1,12 @@
+"""Encapsulation is the process of preventing clients from accessing certain properties, which can only be accessed through specific methods."""
+
 class Book:
     def __init__(self, title, quantity, author, price):
         self.title = title
         self.quantity = quantity
         self.author = author
         self.price = price
+        # private attribute called __discount in the Book class.
         self.__discount = 0.10
         
     def __repr__(self):
